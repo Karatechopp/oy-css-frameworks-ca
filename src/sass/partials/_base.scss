@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background: $body-color;
+    font-family: $font-family-base !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.icon_color {
+    color: $color-secondary;
+}

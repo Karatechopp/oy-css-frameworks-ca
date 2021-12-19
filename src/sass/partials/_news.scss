@@ -1,0 +1,53 @@
+.card__header {
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 18px;
+    color: $color-secondary;   
+}
+
+.card {
+    max-width: 400px;
+    height: 414px;
+    margin: 10px;
+    padding: 0;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.05);
+    & button {
+        background: linear-gradient(to left,$color-secondary 32px, $color-primary 0px);
+        color: white;
+        border: none;
+        text-transform: uppercase;
+    }
+}
+
+.news__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news__pagebuttons {
+    
+    & button {
+        background-color: white;
+        color: $color-primary;
+        padding: 11px 22px 11px 22px;
+    }
+    & .--active {
+        background-color: $color-primary;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        max-width: 264px;
+        height: 394px;
+    }
+    .news__cards {
+        justify-content: space-between;
+    }
+}
